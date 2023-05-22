@@ -40,7 +40,12 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        {/* Do not remove the main div */}
+        <ol>
+        {this.cityList.map((city,index)=>(
+          <li key={`location${index+1}`}>{city}</li>
+
+        ))}
+        </ol>
       </div>
     )
   }
